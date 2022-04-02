@@ -1,0 +1,29 @@
+{
+  "name": "one-stop-tabletop",
+  "version": "1.0.0",
+  "description": "Application for hosting character sheets",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danlordrises/One-Stop-Tabletop.git"
+  },
+  "author": "Dan Nguyen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Danlordrises/One-Stop-Tabletop/issues"
+  },
+  "homepage": "https://github.com/Danlordrises/One-Stop-Tabletop#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
