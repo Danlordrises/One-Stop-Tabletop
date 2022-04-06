@@ -40,8 +40,8 @@ function Register() {
     setFormData((prevState) => ({
         ...prevState,
         [e.target.name]: e.target.value,
-    }))
-  }
+    }));
+  };
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -64,7 +64,8 @@ function Register() {
     return <Spinner />
   };
 
-  return <>
+  return (
+  <>
     <section className='heading'>
       <h1>
         <FaUser /> Register
@@ -124,6 +125,7 @@ function Register() {
       </form>
     </section>
   </>
+  )
 };
 
 export default Register;

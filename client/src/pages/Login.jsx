@@ -8,10 +8,8 @@ import Spinner from '../components/Spinner';
 
 function Login() {
   const [formData, setFormData] = useState({
-    name: '',
     email: '',
     password: '',
-    password2: ''
   });
 
   const { email, password } = formData;
@@ -40,8 +38,8 @@ function Login() {
     setFormData((prevState) => ({
         ...prevState,
         [e.target.name]: e.target.value,
-    }))
-  }
+    }));
+  };
 
   const onSubmit = (e) => {
     e.preventDefault();
@@ -56,7 +54,7 @@ function Login() {
 
   if(isLoading) {
     return <Spinner />
-  }
+  };
 
   return (
   <>
